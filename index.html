@@ -32,7 +32,7 @@
       </ul>
       <img
         class="header-image"
-        src="images\profile_picture.png"
+        src="images\profile-pic.jpg"
         alt="Foto de perfil de Ricardo López"
       />
     </header>
@@ -51,12 +51,90 @@
       </section>
       <section class="proyects">
         <h2 class="subtitles">Proyectos destacados</h2>
-        <div class="proyects-cards"></div>
+        <div class="proyects-cards">
+          <article class="proyect-card">
+            <figure class="proyect-thumbnail">
+              <img
+                src="images\proyecto-cafetería.png"
+                alt="Vista previa del sitio web de la cafetería Triple Espresso"
+                class="proyect-image"
+              />
+              <div class="tech-badges">
+                <img src="images\html5.svg" alt="HTML5" class="tech-icon" />
+                <img src="images\css3.svg" alt="CSS3" class="tech-icon" />
+              </div>
+            </figure>
+
+            <div class="proyect-info">
+              <h3 class="proyect-title">Página web de una cafetería</h3>
+              <p class="proyect-description">
+                Desarrollo de una landing page responsiva para una cafetería
+                siguiendo un brief de diseño. Incluye estructura semántica,
+                maquetación con Flexbox, creación de secciones nuevas y un
+                formulario de contacto funcional. Logro: Implementé desde cero
+                el diseño completo de la página, organicé el proyecto con buenas
+                prácticas y publiqué la versión final utilizando GitHub Pages.
+              </p>
+
+              <div class="proyect-links">
+                <img
+                  class="demo-button"
+                  src="images\demo.svg"
+                  alt="Demo en vivo"
+                />
+                <img
+                  class="github-button"
+                  src="images\github-link.svg"
+                  alt="Enlace al repositorio en GitHub"
+                />
+              </div>
+            </div>
+          </article>
+
+          <article class="proyect-card">
+            <figure class="proyect-thumbnail">
+              <img
+                src="images\mi-proyecto.png"
+                alt="Vista previa de mi proyecto"
+                class="proyect-image"
+              />
+              <div class="tech-badges">
+                <img src="images\JS.svg" alt="JavaScript" class="tech-icon" />
+                <img src="images\react.svg" alt="React" class="tech-icon" />
+              </div>
+            </figure>
+
+            <div class="proyect-info">
+              <h3 class="proyect-title">Mi proyecto</h3>
+              <p class="proyect-description">Descripción del proyecto</p>
+
+              <div class="proyect-links">
+                <img
+                  class="demo-button"
+                  src="images\demo.svg"
+                  alt="Demo en vivo"
+                />
+                <img
+                  class="github-button"
+                  src="images\github-link.svg"
+                  alt="Enlace al repositorio en GitHub"
+                />
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    <footer class="footer">
+      <h2 class="subtitles">Contacto</h2>
+      <a class="email" href="mailto:r.lpz.lpz@gmail.com">r.lpz.lpz@gmail.com</a>
+      <div class="social-media">
+        <img src="images\social-media\linkedin.svg" alt="LinkedIn" />
+        <img src="images\social-media\facebook.svg" alt="Facebook" />
+        <img src="images\social-media\instagram.svg" alt="Instagram" />
+        <img src="images\social-media\X.svg" alt="X" />
+      </div>
     </footer>
   </body>
 </html>

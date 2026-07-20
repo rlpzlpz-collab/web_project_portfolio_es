@@ -52,6 +52,24 @@ body {
   font-size: 16px;
   line-height: 1.5;
   padding: 89px 120px 0px 120px;
+  background-image:
+    radial-gradient(
+      circle 250px at 75% 25%,
+      rgba(99, 102, 241, 0.3),
+      transparent
+    ),
+    radial-gradient(
+      circle at calc(50% - 80px) 95%,
+      rgba(147, 51, 234, 0.35),
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at calc(50% + 100px) 92%,
+      rgba(99, 102, 241, 0.3),
+      transparent 20%
+    );
+
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -94,6 +112,14 @@ body {
   padding-top: 30px;
 }
 
+.header-image {
+  position: absolute;
+  margin-top: -49px;
+  right: 0;
+  width: 387px;
+  height: 500px;
+}
+
 .personal-links {
   display: flex;
   list-style: none;
@@ -127,6 +153,8 @@ body {
   font-size: 40px;
   line-height: 100%;
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .tools-list {
@@ -143,4 +171,102 @@ body {
   list-style: none;
   margin: 0;
   padding: 100px 0 0 0;
+}
+
+.proyects-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.proyect-card {
+  background-color: #1c1c1c;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.proyect-thumbnail {
+  position: relative;
+  margin: 0;
+}
+
+.proyect-image {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 16/9;
+}
+
+.tech-badges {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+.tech-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.proyect-info {
+  height: 340px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.proyect-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.proyect-description {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+  padding-top: 20px;
+}
+
+.proyect-links {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 100px 0 0 0;
+  text-align: center;
+}
+
+.email {
+  text-decoration: none;
+  color: #6d6dff;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
