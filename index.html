@@ -1,46 +1,57 @@
 <html>
   <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Portafolio</title>
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <h1 class="header-title">
+        Ricardo <br />
+        López
+      </h1>
+      <p class="header-subtitle">
+        Desarrollador Full-Stack Junior | TypeScript, React, Node.js
+      </p>
+      <p class="header-description">
+        Desarrollador web junior con experiencia práctica creando interfaces
+        limpias y responsivas con HTML, CSS, JavaScript y React, así como
+        implementando lógica básica de back-end. Ha trabajado en proyectos
+        formativos que siguen procesos reales de desarrollo, usando Git, GitHub
+        y Figma. Disfruta colaborar en equipo, mantener un código claro y
+        resolver problemas de forma estructurada. Motivado por seguir
+        aprendiendo, asumir nuevos retos y aprovechar oportunidades para crecer
+        como desarrollador.
+      </p>
+      <ul class="personal-links">
+        <li><a class="personal-link" href="">Descargar CV</a></li>
+        <li><a class="personal-link" href="">Enlace a GitHub</a></li>
+        <li><a class="personal-link" href="">Hablemos</a></li>
+      </ul>
+      <img
+        class="header-image"
+        src="images\profile_picture.png"
+        alt="Foto de perfil de Ricardo López"
+      />
     </header>
 
     <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I am a web developer passionate about creating beautiful and
-          functional websites.
-        </p>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>Project 1</h3>
-          <p>Description of Project 1.</p>
-        </div>
-        <div class="project">
-          <h3>Project 2</h3>
-          <p>Description of Project 2.</p>
+      <section class="tools">
+        <h2 class="subtitles">Habilidades y herramientas</h2>
+        <div class="tools-list">
+          <img src="images\html5.svg" alt="HTML5" />
+          <img src="images\css3.svg" alt="CSS3" />
+          <img src="images\JS.svg" alt="JavaScript" />
+          <img src="images\Git.svg" alt="Git" />
+          <img src="images\github.svg" alt="GitHub" />
+          <img src="images\chatgpt.svg" alt="ChatGPT" />
         </div>
       </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: example@example.com</p>
-        <p>Phone: (123) 456-7890</p>
+      <section class="proyects">
+        <h2 class="subtitles">Proyectos destacados</h2>
+        <div class="proyects-cards"></div>
       </section>
     </main>
 
