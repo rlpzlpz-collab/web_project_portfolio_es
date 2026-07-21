@@ -139,6 +139,10 @@ body {
   padding-bottom: 5px;
 }
 
+.personal-link:hover {
+  opacity: 0.5;
+}
+
 .tools {
   display: flex;
   flex-direction: column;
@@ -252,6 +256,14 @@ body {
   padding-top: 30px;
 }
 
+.demo-button:hover {
+  opacity: 0.5;
+}
+
+.github-button:hover {
+  opacity: 0.5;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -270,12 +282,20 @@ body {
   margin-top: 20px;
 }
 
+.email:hover {
+  opacity: 0.5;
+}
+
 .social-media {
   display: flex;
   justify-content: center;
   gap: 80px;
   margin-top: 30px;
   margin-bottom: 100px;
+}
+
+.social-media-button:hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 1023px) {
