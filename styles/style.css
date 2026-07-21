@@ -55,17 +55,17 @@ body {
   background-image:
     radial-gradient(
       circle 250px at 75% 25%,
-      rgba(99, 102, 241, 0.3),
+      rgba(109, 109, 255, 0.3),
       transparent
     ),
     radial-gradient(
       circle at calc(50% - 80px) 95%,
-      rgba(147, 51, 234, 0.35),
+      rgba(109, 109, 255, 0.35),
       transparent 20%
     ),
     radial-gradient(
       circle at calc(50% + 100px) 92%,
-      rgba(99, 102, 241, 0.3),
+      rgba(109, 109, 255, 0.3),
       transparent 20%
     );
 
@@ -199,14 +199,22 @@ body {
   aspect-ratio: 16/9;
 }
 
+.proyect-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  pointer-events: none;
+}
+
 .tech-badges {
   position: absolute;
   bottom: 10px;
   left: 12px;
   display: flex;
   gap: 10px;
-  height: 40px;
-  width: 40px;
 }
 
 .tech-icon {
@@ -264,9 +272,171 @@ body {
 
 .social-media {
   display: flex;
-  justify-content: space-between;
   justify-content: center;
   gap: 80px;
   margin-top: 30px;
   margin-bottom: 100px;
+}
+
+@media (max-width: 1023px) {
+  body {
+    min-width: 320px;
+    max-width: 100%;
+    padding: 40px 40px 0px 40px;
+    background-image:
+      radial-gradient(
+        circle 350px at 85% 10%,
+        rgba(109, 109, 255, 0.3),
+        transparent
+      ),
+      radial-gradient(
+        circle at calc(50% - 80px) 95%,
+        rgba(109, 109, 255, 0.35),
+        transparent 20%
+      ),
+      radial-gradient(
+        circle at calc(50% + 100px) 92%,
+        rgba(109, 109, 255, 0.3),
+        transparent 20%
+      );
+
+    background-repeat: no-repeat;
+  }
+
+  .header-image {
+    margin-top: 0;
+    width: 30%;
+    height: auto;
+  }
+
+  .header-title,
+  .header-subtitle {
+    max-width: calc(100% - 140px);
+    max-height: none;
+  }
+
+  .header-title {
+    font-size: 58px;
+  }
+
+  .header-description,
+  .personal-links {
+    max-width: 68%;
+    max-height: none;
+  }
+
+  .personal-links {
+    padding: 20px 0 0 0;
+    gap: 30px;
+  }
+
+  .proyects-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .proyect-image {
+    aspect-ratio: 344/165;
+  }
+
+  .proyect-info {
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    max-width: 100%;
+    padding: 20px 20px 0px 20px;
+    background-image:
+      radial-gradient(
+        circle 350px at 50% 10%,
+        rgba(109, 109, 255, 0.3),
+        transparent
+      ),
+      radial-gradient(
+        circle at calc(50% - 80px) 95%,
+        rgba(109, 109, 255, 0.35),
+        transparent 20%
+      ),
+      radial-gradient(
+        circle at calc(50% + 100px) 92%,
+        rgba(109, 109, 255, 0.3),
+        transparent 20%
+      );
+
+    background-repeat: no-repeat;
+  }
+
+  .header-image {
+    order: -1;
+    position: static;
+    width: calc(100% + 40px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0 0px 32px 0px;
+  }
+
+  .header-title,
+  .header-subtitle {
+    max-width: 100%;
+  }
+
+  .header-title {
+    font-size: 36px;
+  }
+
+  .header-description {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .personal-links {
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 24px;
+  }
+
+  .subtitles {
+    font-size: 28px;
+  }
+
+  .tools-list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 32px 40px;
+  }
+
+  .proyect-image {
+    aspect-ratio: 28/16;
+  }
+
+  .proyect-info {
+    padding: 20px;
+  }
+
+  .proyect-title {
+    font-size: 20px;
+  }
+
+  .proyect-description {
+    font-size: 16px;
+  }
+
+  .tech-badges {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 5px;
+  }
+
+  .tech-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .social-media {
+    gap: 40px;
+  }
 }
