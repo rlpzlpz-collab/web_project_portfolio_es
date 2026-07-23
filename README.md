@@ -4,7 +4,7 @@ Sitio web de portafolio personal, desarrollado con HTML y CSS puro (sin framewor
 
 ## 🚀 Demo
 
-Publicado con GitHub Pages: _agrega aquí el enlace una vez publicado_
+Publicado con GitHub Pages: https://rlpzlpz-collab.github.io/web_project_portfolio_es/
 
 ## 🛠️ Tecnologías
 
@@ -26,13 +26,13 @@ Publicado con GitHub Pages: _agrega aquí el enlace una vez publicado_
 
 ## 📱 Diseño responsivo
 
-El sitio está maquetado con un enfoque *desktop-first* y usa los siguientes puntos de ruptura:
+El sitio está maquetado con un enfoque _desktop-first_ y usa los siguientes puntos de ruptura:
 
-| Breakpoint | Rango aproximado | Cambios principales |
-|---|---|---|
-| Base (sin media query) | ≥ 1023px, hasta 1440px | Diseño de escritorio: imagen de perfil flotante junto al título, tarjetas de proyecto en 2 columnas |
-| `max-width: 1023px` | 768px – 1023px | Imagen de perfil reducida, título/subtítulo con ancho fluido para no encimarse con la imagen, tarjetas de proyecto en 1 columna con altura automática |
-| `max-width: 767px` | < 767px | Imagen de perfil a ancho completo arriba del texto, links de contacto apilados en columna, íconos de herramientas en filas con wrap |
+| Breakpoint             | Rango aproximado       | Cambios principales                                                                                                                                   |
+| ---------------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Base (sin media query) | ≥ 1023px, hasta 1440px | Diseño de escritorio: imagen de perfil flotante junto al título, tarjetas de proyecto en 2 columnas                                                   |
+| `max-width: 1023px`    | 768px – 1023px         | Imagen de perfil reducida, título/subtítulo con ancho fluido para no encimarse con la imagen, tarjetas de proyecto en 1 columna con altura automática |
+| `max-width: 767px`     | < 767px                | Imagen de perfil a ancho completo arriba del texto, links de contacto apilados en columna, íconos de herramientas en filas con wrap                   |
 
 ## 📁 Estructura del proyecto
 
@@ -40,7 +40,7 @@ El sitio está maquetado con un enfoque *desktop-first* y usa los siguientes pun
 ├── index.html
 ├── styles/
 │   ├── normalize.css
-│   └── style.css
+│   └── index.css
 ├── fonts/
 ├── images/
 │   ├── social-media/
@@ -60,4 +60,3 @@ El sitio está maquetado con un enfoque *desktop-first* y usa los siguientes pun
 
 - Email: r.lpz.lpz@gmail.com
 - LinkedIn / Facebook / Instagram / X: enlaces disponibles en el footer del sitio
-

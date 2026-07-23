@@ -2,10 +2,7 @@
   font-family: "Archivo Black";
   src: url("../fonts/ArchivoBlack-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: Regular;
-  font-size: 40px;
-  line-height: 1.5;
-  letter-spacing: 0%;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -13,10 +10,7 @@
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: Regular;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0%;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -24,10 +18,7 @@
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: Bold;
-  font-size: 24px;
-  line-height: 1.5;
-  letter-spacing: 0%;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -35,10 +26,7 @@
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
-  font-style: SemiBold;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0%;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -88,8 +76,12 @@ body {
   font-family: "Archivo Black", "Arial", sans-serif;
   font-weight: 400;
   font-size: 72px;
-  line-height: 100%;
+  line-height: 1;
   margin: 0;
+}
+
+.header-title-line {
+  display: block;
 }
 
 .header-subtitle {
@@ -114,7 +106,7 @@ body {
 
 .header-image {
   position: absolute;
-  margin-top: -49px;
+  top: -49px;
   right: 0;
   width: 387px;
   height: 500px;
@@ -155,7 +147,7 @@ body {
   font-family: "Archivo Black", "Arial", sans-serif;
   font-weight: 400;
   font-size: 40px;
-  line-height: 100%;
+  line-height: 1;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -298,7 +290,7 @@ body {
   opacity: 0.5;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1439px) {
   body {
     min-width: 320px;
     max-width: 100%;
